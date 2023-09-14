@@ -43,7 +43,7 @@
     box-sizing: border-box;
     height: 43px;
   }
-  
+ 
   #languageButton {
     font-size: 16px;
     padding: 10px 20px;
@@ -52,8 +52,6 @@
     top: 10px; 
     right: 10px; 
 }
-
-
 
   .about-us,
   .blog,
@@ -199,6 +197,22 @@
     position: absolute;
     left: 0;
   }
+  .dark-theme-button {
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    width: 25px;
+    height: 25px;
+    top: 16px;
+    right: 80px;
+}
+ button{
+    border:none;
+    cursor: pointer;
+}
+
+
+
   .get-to-know {
     width: 73.06%;
     top: -2px;

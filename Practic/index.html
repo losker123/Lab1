@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./dark.css" id="theme-link">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
@@ -17,11 +18,13 @@
     href="https://fonts.googleapis.com/css2?family=RF Dewi:wght@400&display=swap"
     />
   </head>
-  <body>
+  <body>  
     <div class="block">
       <header>  
         <img class="icon" alt="" src="./public/frame.svg" />
         <img class="group-icon" alt="" src="./public/group.svg" />
+
+        <button id="dark-theme-button"> <img src="./public/Button.png" class="dark-theme-button"></button>
         <button id="languageButton">RU</button>
         <script src="script.js"></script>
         <section class="hero">
@@ -30,36 +33,35 @@
             <img class="frame-icon" alt="" src="./public/framee.svg" />
             <div class="link">
               <div class="demo btn">
-                <div class="book-a-demo">book a demo</div>
+                <div class="book-a-demo" data-i18n="navHome">book a demo</div>
               </div>
               
-              <div class="technology">technology</div>
-              <div class="about-us">about us</div>
-              <div class="impact">impact</div>
-              <div class="portfolio">portfolio</div>
-              <div class="blog">blog</div>
+              <div class="technology" data-i18n="technology">technology</div>
+              <div class="about-us" data-i18n="aboutUs">about us</div>
+              <div class="impact" data-i18n="impact">impact</div>
+              <div class="portfolio" data-i18n="portfolio">portfolio</div>
+              <div class="blog" data-i18n="blog">blog</div>
             </div>
           </div>
           <div class="hero-content btn">  
-            <div class="book-a-demo1">Book a demo</div>
+            <div class="book-a-demo1" data-i18n="bookADemo">Book a demo</div>
           </div>
           
-          <div class="connecting-the-curb">
+          <div class="connecting-the-curb" data-i18n="connectingTheCurb">
             Connecting the curb to new insights
           </div>
           <div class="connecting-the-curb-container">
             <span class="connecting-the-curb-container1">
-              <p class="connecting-the-curbb">Connecting the curb</p>
-              <p class="connecting-the-curbb">to new insights</p>
+              <p class="connecting-the-curbb" data-i18n="connectingTheCurb">Connecting the curb</p>
+              <p class="connecting-the-curbb" data-i18n="toNewInsights">to new insights</p>
             </span>
           </div>
-          <div class="real-time-curb-data">
+          <div class="real-time-curb-data" data-i18n="realTimeCurbData">
             Real-time curb data for smart cities. Measure occupancy, analyze
             demand, and manage curb space with the right tools.
           </div>
         </section>
-       </section>
-    </header>
+      </header>
       <main>  
         <section class="about">
           <img class="rectangle-iconmob" alt="" src="./public/rectangle@2xx.png"/>
@@ -233,7 +235,6 @@
           <img class="vector-icon" alt="" src="./public/vector.svg" />
         </section>
         <section class="our-blog-postss">
-          <img class="rectfons" alt="" src="./public/rectfon.svg" />
           <div class="our-blog-posts-content">
   
             <div class="conferencess">
@@ -379,5 +380,6 @@
           </section>
       </footer>
     </div>
-  </body>
+  </body> 
+  <script src = "./index.js"></script> 
 </html>
